@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'CriativaSansRegular';
+    color: rgba(234, 234, 234, 0.938);
+}
+body {
+    background: linear-gradient(45deg, rgb(31, 31, 31), #2f2f2f) fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.mainpage{
+    padding: 90px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    padding: 100px 100px 100px 50px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title .maintitle{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0;
+
+}
+.title .maintitle p{
+    color: white;
+
+}
+.detaildescription{
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+hr{
+    width: 100%;
+}
+.buttons{
+    margin: 30px 0;
+}
+button{
+    margin: 0 40px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    outline: none;
+    background-color: grey;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo img:hover{
+    scale: 1.01;
+    transition: ease .4;
+}

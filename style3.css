@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'CriativaSansRegular';
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    background: linear-gradient(45deg, rgb(31, 31, 31), #2f2f2f) fixed;
+    background-color: transparent;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    background: linear-gradient(45deg, rgb(31, 31, 31), #2f2f2f) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    margin: 50px 0 30px 0;
+    font-size: 50px;
+    color: rgb(214, 214, 214);
+    font-weight: 100;
+}
+button{
+   font-size: 15rem;
+   color: white;
+   background-color: black;
+   border: none;
+   outline: none;
+   border-radius: 50%;
+   width: 320px;
+   height: 320px;
+   text-align: center;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

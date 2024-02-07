@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'CriativaSansRegular';
+    color: rgba(234, 234, 234, 0.938);
+}
+body {
+    background: linear-gradient(45deg, rgb(31, 31, 31), #2f2f2f) fixed;
+    height: 91vh;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainpage{
+    padding: 100px;    
+    display: flex;
+    flex-direction: row;
+
+
+}
+.links{
+    margin: 0 10px;
+    height: 50vh;
+    padding: 100px 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sender,.reciever{
+    width: 600px;
+    background-color: rgb(177, 177, 177);
+    margin: 0 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+}
+.user img{
+    border-radius:20px ;
+    width: 60px;
+    margin-right: 15px;
+}
+.user p{
+    color: rgb(41, 41, 41);
+    font-size: 17px;
+}
+
+.chats{
+    flex: 1;
+    width: 92%;
+    background-color: rgb(220, 220, 220);
+    margin: 0 20px 20px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    color: white;
+    background-color: #2f2f2f;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.livechat{
+    flex: 1;
+}
+.input{
+    margin: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: #949494;
+    border-radius: 10px;
+    align-items: center;
+}
+.input input{
+    flex: 1;
+    margin: 0 15px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #131313;
+}
+.input button{
+    margin: 8px;
+    padding: 12px;
+}
+::placeholder{
+    color: #2f2f2f;
+}
