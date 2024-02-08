@@ -1,4 +1,4 @@
-// Import the functions you need from the SDKs you need
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
@@ -15,7 +15,6 @@ const firebaseConfig = {
   
   
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
@@ -23,14 +22,12 @@ const database = getDatabase(app);
 
 let loginButton = document.getElementById("Login");
 
-// ... (your existing code)
 
 loginButton.addEventListener('click', (e) => {
   signInWithPopup(auth, provider)
     .then((result) => {
       const user = result.user;
 
-      // Capture username and email from user input (replace with your actual logic)
       const username = "user123";
       const email = "user@example.com";
 
@@ -40,7 +37,6 @@ loginButton.addEventListener('click', (e) => {
       })
       .then(() => {
         alert(`Successful login! Welcome, ${user.displayName}!`);
-        // Store user information in the Realtime Database
         storeUserInfo(user.uid, user.displayName, user.photoURL, user.email);
 
         console.log("Redirecting to main page...");
@@ -58,17 +54,16 @@ loginButton.addEventListener('click', (e) => {
     });
 });
 
-// Define the storeUserInfo function to store user information in the Realtime Database
 function storeUserInfo(uid, displayName, photoURL, email) {
-  const joindate = new Date(); // Creates a new Date object representing the current date and time
-  const userRef = ref(database, 'users/' + uid); // Reference to the user's data in the database
+  const joindate = new Date(); 
+  const userRef = ref(database, 'users/' + uid);
 
   // Set user data in the database
   return set(userRef, {
     displayName: displayName,
     photoURL: photoURL,
     email: email,
-    joindate: joindate.toISOString() // Store joindate as a string in ISO format
+    joindate: joindate.toISOString() 
   })
   .then(() => {
     console.log("User information stored successfully.");
